@@ -14,3 +14,6 @@ target/
 bin/
 target/
 out/
+
+#macOS
+.DS_Store

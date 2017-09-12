@@ -6,7 +6,7 @@
     <groupId>com.docker</groupId>
     <artifactId>mta-java</artifactId>
     <version>1.0.0</version>
-    <packaging>war</packaging>
+    <!-- <packaging>war</packaging> -->
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -49,7 +49,6 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <!-- <start-class>com.docker.hello.Application</start-class> -->
     </properties>
 
 
