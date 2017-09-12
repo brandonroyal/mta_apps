@@ -3,8 +3,6 @@ FROM tomcat:9-alpine
 # Install dependencies
 RUN apk update; apk add zip netcat-openbsd curl
 
-ENV MYSQL_DB_HOST=0.0.0.0 MYSQL_DB_PORT=3306
-
 WORKDIR /app
 
 # This script forces a wait to make sure the DB is ready
