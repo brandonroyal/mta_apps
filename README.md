@@ -1,7 +1,9 @@
-# MTA App - Java
+# MTA Sample Apps
 
-## Usage
+## Linux
 
-```
-$ sh build.sh
-```
+[Atsea - Java](linux-java/README.md)
+
+## Windows
+
+[Atsea - .NET Framework](windows-dotnet/README.md)
