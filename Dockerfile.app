@@ -1,16 +1,3 @@
-#build stage
-FROM maven:3-jdk-8-alpine AS builder
-
-WORKDIR /usr/src/mymaven
-
-ADD pom.xml .
-
-RUN mvn verify clean --fail-never
-
-ADD . /usr/src/app
-
-RUN mvn verify
-
 #application stage
 FROM tomcat:9-alpine
 # Install dependencies
@@ -28,6 +15,6 @@ RUN ["chmod", "+rx", "./bootstrap.sh"]
 # Remove the root folder
 RUN ["rm", "-r", "/usr/local/tomcat/webapps/ROOT"]
 # Copy the application archive as ROOT.war so that the app becomes the root 
-COPY --from=builder /usr/src/mymaven/target/mta-java.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/mta-java.war /usr/local/tomcat/webapps/ROOT.war
 
 ENTRYPOINT ["/app/bootstrap.sh"]

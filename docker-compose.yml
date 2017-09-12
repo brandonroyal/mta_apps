@@ -6,8 +6,8 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile.tomcat
+      dockerfile: Dockerfile.app
     image: broyal/java-sample:0.1
     ports:
-      - 8080:8080
+      - 8081:8080
   # db:

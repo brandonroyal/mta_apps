@@ -3,7 +3,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.springframework</groupId>
+    <groupId>com.docker</groupId>
     <artifactId>mta-java</artifactId>
     <version>1.0.0</version>
     <packaging>war</packaging>
@@ -27,14 +27,14 @@
 
         <!-- JPA Data (We are going to use Repositories, Entities, Hibernate, etc...) -->
 
-        <dependency>
+        <!-- <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
+        </dependency> -->
 
         <!-- Use MySQL Connector-J -->
 
-        <dependency>
+        <!-- <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
@@ -43,22 +43,23 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
+        </dependency> -->
 
     </dependencies>
 
     <properties>
         <java.version>1.8</java.version>
+        <!-- <start-class>com.docker.hello.Application</start-class> -->
     </properties>
 
 
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
-            <!-- <plugin>
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin> -->
+            </plugin>
         </plugins>
     </build>
 

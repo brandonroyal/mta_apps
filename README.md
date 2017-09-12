@@ -1,1 +1,7 @@
-# Java Sample App for MTA
+# MTA App - Java
+
+## Usage
+
+```
+$ sh build.sh
+```
