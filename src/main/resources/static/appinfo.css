@@ -1,0 +1,12 @@
+.appinfo {
+    background-color: #101e26;
+    color: white;
+    padding: 20px;
+    font-family: Open Sans;
+    font-size: 8px;
+    text-align:right;
+}
+
+#appInfoDetails {
+    opacity: .8;
+}
