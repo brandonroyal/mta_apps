@@ -8,7 +8,7 @@ using System.Web.Http;
 
 namespace Docker.AtSea.Api.Controllers
 {
-    [RoutePrefix("atsea/utility")]
+    [RoutePrefix("utility")]
     public class UtilityController : ApiController
     {
         private ApplicationDbContext db = new ApplicationDbContext();
