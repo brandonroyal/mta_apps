@@ -1,0 +1,16 @@
+#builds
+target/
+
+#VS Code
+.vscode/
+
+#Intellij
+.idea
+
+#Java
+.settings/
+.project
+.classpath
+bin/
+target/
+out/
