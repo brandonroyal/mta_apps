@@ -12,6 +12,11 @@ services:
       - db
     networks:
       - backend
+    healthcheck:
+      test: ["CMD", "curl", "http://localhost:8080/health"]
+      interval: 10s
+      timeout: 3m
+      retries: 10
   db:
     build:
       context: .

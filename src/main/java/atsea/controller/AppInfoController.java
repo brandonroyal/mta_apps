@@ -19,7 +19,7 @@ public class AppInfoController {
 	@Autowired
 	AppInfoService appInfoService;
 	
-	@RequestMapping(value = "/labels/", method = RequestMethod.GET)
+	@RequestMapping(value = "/labels", method = RequestMethod.GET)
 	public ResponseEntity<List<AppInfo>> listAllLabels() {
 		List<AppInfo> labels = appInfoService.getAllAppInfoLabels();
 		if (labels.isEmpty()) {

@@ -19,4 +19,9 @@ public class AppInfoServiceImpl implements AppInfoService {
 		return appInfoRepository.findAll();
 	}
 
+	@Override
+	public AppInfo getLabel(String label) {
+		return appInfoRepository.findOne(label);
+	}
+
 }
