@@ -2,8 +2,8 @@
 
 ## Linux
 
-[Atsea - Java](linux-java/README.md)
+[Atsea - Java](linux/README.md)
 
 ## Windows
 
-[Atsea - .NET Framework](windows-dotnet/README.md)
+[Atsea - .NET Framework](windows/README.md)
