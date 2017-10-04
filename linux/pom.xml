@@ -46,6 +46,13 @@
             <scope>test</scope>
         </dependency> -->
 
+        <!-- JSON Support -->
+
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+        </dependency>
+
     </dependencies>
 
     <properties>
